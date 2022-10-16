@@ -130,6 +130,19 @@ border-bottom: 1px solid #ececec;
     padding: 200px 0;
 }
 
+ .overlay {
+    max-width: 1600px;
+    max-height: 636px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: url(../images3/Img-title.jpg);
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat ;  
+} 
+
+
 .main-title {
     margin-top: 0;
     margin-bottom: 30;
@@ -200,6 +213,34 @@ padding-bottom: 0;
 .item {
     width: calc((100%-90px)/4);
 }
+
+.item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* .item:nth-child(1)::before {
+    background-image: url();
+}
+
+.item:nth-child(2)::before {
+    background-image: url();
+}
+
+.item:nth-child(3)::before {
+    background-image: url();
+}
+
+.item:nth-child(4)::before {
+    background-image: url();
+} */
 
 .feature-list .item {
     width: 300px;
@@ -298,6 +339,28 @@ padding-bottom: 0;
     font-size: 16px;
     line-height: 1.2;
     color: var(--second-color-text);
+}
+
+.icons-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+    padding: 0;
+}
+
+.icons-items-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-sos-icons {
+    fill: #AFB1B8;
 }
 
 /* Footer */
