@@ -478,6 +478,10 @@ padding-bottom: 0;
 
 /* Find us on */
 
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
 
 .footer-add-container {
     margin-right: 70px;
@@ -486,7 +490,7 @@ padding-bottom: 0;
 .footer-social-title {
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     text-align: center;
     font-weight: 700px;
     font-size: 14px;
