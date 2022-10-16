@@ -353,14 +353,26 @@ padding-bottom: 0;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: tomato;
+    /* background-color: tomato; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.icons-items-link:hover, .icons-items-link:focus {
+ background-color: #2196F3;
+}
+
+.icons-items-link:hover .team-sos-icons,
+.icons-items-link:focus .team-sos-icons{
+    fill: #fff;
+   }
+
 .team-sos-icons {
     fill: #AFB1B8;
+}
+.team-sos-icons:hover, .team-sos-icons:focus{
+    fill: #fff;
 }
 
 /* Footer */
