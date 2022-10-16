@@ -100,7 +100,7 @@ border-bottom: 1px solid #ececec;
 
 .nav-list-on {
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 
 .nav-list-on .link.current {
@@ -120,6 +120,22 @@ border-bottom: 1px solid #ececec;
 .nav-on-item:hover, .nav-on-item:focus { 
     color: var(--main-nav-color);
     
+}
+.contacts-li {
+    align-items: center;
+    justify-content: center;
+}
+.contacts-li:not(:last-child) {
+    margin-right: 50px;
+    } 
+.contacts-icon {
+    margin-right: 10px;
+    fill: var(--second-color-text);
+}
+
+.contacts-li:hover .contacts-icon,
+.contacts-li:focus .contacts-icon {
+    fill: var(--main-nav-color);
 }
 
 /* Main part*/
@@ -214,7 +230,16 @@ padding-bottom: 0;
     width: calc((100%-90px)/4);
 }
 
-.item::before {
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F4FA;;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+/* .item::before {
     display: block;
     content: "";
     height: 120px;
@@ -224,22 +249,22 @@ padding-bottom: 0;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 
 /* .item:nth-child(1)::before {
-    background-image: url();
+    background-image: url(../images3/antenna\ 1-2.jpg);
 }
 
 .item:nth-child(2)::before {
-    background-image: url();
+    background-image: url(../images3/clock\ 1-2.jpg);
 }
 
 .item:nth-child(3)::before {
-    background-image: url();
+    background-image: url(../images3/diagram\ 1-2.jpg);
 }
 
 .item:nth-child(4)::before {
-    background-image: url();
+    background-image: url(../images3/astronaut\ 1-2.jpg);
 } */
 
 .feature-list .item {
@@ -375,6 +400,51 @@ padding-bottom: 0;
     fill: #fff;
 }
 
+
+/* Regular Customers  */
+
+.permanent-clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+    margin-bottom: 50px;
+    }
+    .permanent-clients-list {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+    .permanent-clients-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .permanent-clients-icon {
+        fill: #AFB1B8;
+    }
+    
+    .permanent-clients-link:hover .permanent-clients-icon,
+    .permanent-clients-link:focus .permanent-clients-icon {
+        fill: var(--main-nav-color);
+    }
+    
+    .permanent-clients-link:hover,
+    .permanent-clients-link:focus {
+        border: 1px solid var(--main-nav-color);
+        fill: var(--main-nav-color);
+    }
+
+
 /* Footer */
 
 .footer {
@@ -404,6 +474,59 @@ padding-bottom: 0;
     font-size: 14px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
+}
+
+/* Find us on */
+
+
+.footer-add-container {
+    margin-right: 70px;
+}
+
+.footer-social-title {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-color-text);
+    margin-bottom: 20px;
+}
+
+.footer-icon-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer-icon {
+    fill: var(--white-color-text);
+}
+
+
+.footer-icon-link:hover .footer-icon,
+.footer-icon-link:focus .footer-icon {
+    fill: var(--white-color-text);
+}
+
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+    background-color: var(--main-nav-color);
 }
 
 /* Portfolio */
@@ -470,6 +593,11 @@ padding-bottom: 0;
     height: 404px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
+}
+
+.image-items-list:hover, 
+.image-items-list:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-text {
